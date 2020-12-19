@@ -1,19 +1,19 @@
-const formatString = function(string) {
-    if (string.length > 40) {
-        string = string.substring(0, 41);
-        string = string + '...';
-    }
-    return string;
-};
+const countTotalSalary = (employees) => {};
 
-console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
-
-console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
-
-console.log(formatString('Curabitur ligula sapien.'));
+console.log(countTotalSalary({})); // 0
 
 console.log(
-  formatString(
-    'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
-  ),
-);
+  countTotalSalary({
+    mango: 100,
+    poly: 150,
+    alfred: 80,
+  })
+); // 330
+
+console.log(
+  countTotalSalary({
+    kiwi: 200,
+    lux: 50,
+    chelsy: 150,
+  })
+); // 400
