@@ -1,14 +1,13 @@
 const findBestEmployee = (employees) => {
-  const value = Object.values(employees);
-  const key = Object.keys(employees);
+  const values = Object.values(employees);
+  const keys = Object.keys(employees);
   let maxValue = 0;
-  for (let i = 0; i < value.length; i++) {
-    if (value[i] > maxValue) {
-      maxValue = value[i];
+  for (let value of values) {
+    if (value > maxValue) {
+      maxValue = value;
     }
   }
-  let BestEmployee = value.indexOf(maxValue);
-  return key[BestEmployee];
+  return keys[values.indexOf(maxValue)];
 };
 
 console.log(

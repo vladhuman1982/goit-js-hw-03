@@ -1,5 +1,11 @@
-const countTotalSalary = (employees) => {};
-
+const countTotalSalary = (employees) => {
+  let values = Object.values(employees);
+  let totalSalary = 0;
+  for (let value of values) {
+    totalSalary += value;
+  }
+  return totalSalary;
+};
 console.log(countTotalSalary({})); // 0
 
 console.log(
