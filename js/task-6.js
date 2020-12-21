@@ -17,6 +17,6 @@ const calculateTotalPrice = function (allProdcuts, productName) {
   return productTotalPrice;
 };
 
-console.log(calculateTotalPrice(products, "Радар")); // 5200
+console.log(calculateTotalPrice(products, "Радар"));
 
-console.log(calculateTotalPrice(products, "Дроид")); // 2800
+console.log(calculateTotalPrice(products, "Дроид"));
